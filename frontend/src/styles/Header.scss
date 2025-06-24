@@ -1,0 +1,72 @@
+
+.header {
+    background-color: #ffffff;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-family: "Outfit", sans-serif;
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    height: 100%;
+
+    a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 400;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: #009045;
+            transform: scale(1.1);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #009045;
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+
+
+}

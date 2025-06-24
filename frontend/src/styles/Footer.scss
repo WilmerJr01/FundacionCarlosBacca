@@ -1,0 +1,61 @@
+.footer {
+    background-color: #009045;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-content: center;
+
+    .redes-sociales {
+        display: flex;
+        align-content: end;
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        .icon {
+            color: white;
+            height: 35px;
+            width: auto;
+        }
+    }
+
+    .logo-final {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    .informacion {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+
+        .ubicacion{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}
+
+.derechos {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #f0f0f0;
+}
