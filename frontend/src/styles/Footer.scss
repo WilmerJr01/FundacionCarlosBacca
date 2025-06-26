@@ -9,7 +9,9 @@
     display: grid;
     width: 100%;
     grid-template-columns: 2fr 1fr 2fr;
-    justify-content: center;
+    position: relative;
+
+
 
     .redes-sociales {
         display: flex;
@@ -19,20 +21,61 @@
         align-items: flex-end;
         justify-content: center;
 
-        .icon {
+        a {
+            text-decoration: none;
             color: white;
-            height: 35px;
-            width: auto;
+            margin: 0px;
+        }
+
+        .red {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 0;
+            gap: 5px;
+            transition: all 0.3s ease-in-out;
+
+            .icon {
+                color: white;
+                font-size: 2rem;
+
+            }
+
+            .nombre {
+                font-size: 1.2rem;
+                color: white;
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+                transform: translateX(10px);
+                opacity: 0;
+                margin: 0;
+            }
+
+            &:hover {
+                transform: translateX(-5px);
+
+                .nombre {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
         }
     }
 
     .logo-final {
         display: flex;
         justify-content: center;
+        
 
         img {
             width: 200px;
             height: auto;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -44,13 +87,44 @@
         text-align: center;
         padding: 0;
 
-        .ubicacion{
+        .seccion {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            flex-direction: column;
+            gap: 0px;
+            text-align: left;
+            align-items: flex-start;
+
+            .contenido {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.3s ease-in-out;
+
+                .icono {
+                    font-size: 1.5rem;
+                    color: #ffffff;
+                }
+
+                p {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    text-align: left;
+                }
+
+                &:hover {
+                    transform: translateX(5px);
+                }
+            }
+
+            .Titulo {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-weight: 500;
+                color: #f0f0f0;
+            }
         }
     }
+
 }
 
 .derechos {
